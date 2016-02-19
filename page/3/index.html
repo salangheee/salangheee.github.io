@@ -192,11 +192,11 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-coding_android_as_shortkey" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-coding_android_weixinpay" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/11/06/coding_android_as_shortkey/" class="article-date">
-  	<time datetime="2015-11-06T01:57:29.000Z" itemprop="datePublished">2015-11-06</time>
+      <a href="/2015/11/09/coding_android_weixinpay/" class="article-date">
+  	<time datetime="2015-11-09T02:47:29.000Z" itemprop="datePublished">2015-11-09</time>
 </a>
     </div>
   
@@ -209,7 +209,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/06/coding_android_as_shortkey/">倍数提高工作效率的Android Studio奇技</a>
+      <a class="article-title" href="/2015/11/09/coding_android_weixinpay/">Android移动支付之微信支付</a>
     </h1>
   
 
@@ -218,73 +218,41 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这是从Philippe Breault的系列文章《Android Studio Tips Of the Day》中提取出来的自认为精华的部分。<br>这些技巧在实际应用中能够非常大的提高工作效率。 </p>
-<h2 id="关于快捷键">关于快捷键</h2><p><strong> The File Structure Popup</strong> </p>
-<blockquote>
-<p>ctrl+f12 </p>
-</blockquote>
-<p>此快捷键可以调出当前文件的大纲，并通过模糊匹配快速跳转至指定的方法。<br>勾选上“show anonymous classes”后其功能相当于Eclipse中的ctrl+o<br><img src="http://zlv.me/pics/14-ctrl+f12.gif" alt=""></p>
-<p><strong> The Call Hierarchy Popup</strong> </p>
-<blockquote>
-<p>ctrl+alt+h </p>
-</blockquote>
-<p>查看某个方法的调用路径。<br><img src="http://zlv.me/pics/14-ctrl+alt+h.gif" alt=""></p>
-<p><strong> Quick Definition Lookup</strong> </p>
-<blockquote>
-<p>ctrl+shift+i </p>
-</blockquote>
-<p>不离开当前文件当前类的情况下快速查看某个方法或者类的实现。通过大概预览下调用的方法，可以避免许多未知的坑。<br><img src="http://zlv.me/pics/14-ctrl+shift+i.gif" alt=""></p>
-<p><strong> Bookmarks!</strong><br>如其名，书签。帮助快速回到指定的位置，实际使用中简直爽得不行。</p>
-<blockquote>
-<p>f11 </p>
-</blockquote>
-<p>将当前位置添加到书签中或者从书签中移除。 </p>
-<blockquote>
-<p>shift+f11 </p>
-</blockquote>
-<p>显示有哪些书签。<br><img src="http://zlv.me/pics/14-Bookmarks.gif" alt=""></p>
-<p><strong> Find Actions</strong> </p>
-<blockquote>
-<p>ctrl+shift+a </p>
-</blockquote>
-<p>对于没有设置快捷键或者忘记快捷键的菜单或者动作（Action），可能通过输入其名字快速调用。神技！！！<br>例如想要编译，只需要输入”release”，则列表框中就会出现”assembleRelease”选项，选择就可以进行编译。<br><img src="http://zlv.me/pics/14-FindActions.gif" alt=""></p>
-<p><strong> Move Lines Up/Down</strong> </p>
-<blockquote>
-<p>alt+shift+up/down </p>
-</blockquote>
-<p>上下移动行，这个没什么好说的，肯定会用到。<br><img src="http://zlv.me/pics/14-MoveLinesUpDown.gif" alt=""></p>
-<p><strong> Lines Edit</strong></p>
-<blockquote>
-<p>ctrl+y，ctrl+x, ctrl+d </p>
-</blockquote>
-<p>删除行，删除并复制行，复制行并粘贴，必备。<br><strong> VCS Operations Popup</strong> </p>
-<blockquote>
-<p>Alt+`(是1左边的那个键) </p>
-</blockquote>
-<p>此快捷键会显示一个版本管理常用的一个命令，可以通过命令前面的数字或者模糊匹配来快速选择命令。<br>极大的提高了工作效率，快速提交代码、暂存代码、切分支等操作操作如鱼得水。<br><img src="http://zlv.me/pics/14-vcspopup.gif" alt=""></p>
-<p><strong> Hide All Panels</strong> </p>
-<blockquote>
-<p>ctrl+shift+f12 </p>
-</blockquote>
-<p>关闭或者恢复其他窗口。在编写代码的时候非常方便的全屏编辑框，可以更加专心的coding…<br><img src="http://zlv.me/pics/14-hideallwindows.gif" alt=""></p>
-<p><strong> Parameter Info</strong> </p>
-<blockquote>
-<p>ctrl+p </p>
-</blockquote>
-<p>在调用一些方法的时候免不了会忘记或者不知道此方法需要哪些参数。ctrl+p可以显示出此方法需要的参数。必备技能之一。<br><strong> Rename</strong> </p>
-<blockquote>
-<p>shift+f6 </p>
-</blockquote>
-<p>重命名变量或者方法名。重构神技。<br><img src="http://zlv.me/pics/14-rename.gif" alt=""></p>
-<h2 id="条件断点">条件断点</h2><p>通过右键断点，可以对一个断点加入条件。只有当满足条件时，才会进入到断点中。调试神技，只对自己关心的情况进行调试，不浪费时间。<br><img src="http://zlv.me/pics/14-conditionalbreakpoint.gif" alt=""></p>
-<h2 id="进入调试模式">进入调试模式</h2><p>点击Attach Debugger(即绿色小虫旁边那个)可以快速进入调试而不需要重新部署和启动app。<br>可以选择为此功能设置一个快捷键或者通过前面提到的Find Actions(ctrl+shift+a)输入”attach”进行调用。<br><img src="http://zlv.me/pics/14-attachdebugger.gif" alt=""></p>
-<h2 id="快速查看变量的值">快速查看变量的值</h2><p>按住Alt点击想要查看的变量或者语句。如果想查看更多，则可以按Alt+f8调出Evaluate Expression窗口来自行输入自定义的语句。<br><img src="http://zlv.me/pics/14-mouse_evaluate_expression.gif" alt=""></p>
-<h2 id="分析堆栈信息">分析堆栈信息</h2><p>Find Actions(ctrl+shift+a)输入”analyze stacktrace”即可查看堆栈信息。<br><img src="http://zlv.me/pics/14-analyzestacktrace.gif" alt=""></p>
-<h2 id="分析某个值的来源">分析某个值的来源</h2><p>Find Actions(ctrl+shift+a)输入”Analyze Data Flow to Here”，可以查看某个变量某个参数其值是如何一路赋值过来的。<br>对于分析代码非常有用。<br><img src="http://zlv.me/pics/14-analyzedataflow.gif" alt=""></p>
-<h2 id="多行编辑">多行编辑</h2><p>强大的神技之一，用过vim的vim-multiple-cursors或者Sublime Text的多行编辑都不会忘记那种快感！ 也许不是平时用得最多的技能，但是却是关键时刻提高效率的工具。<br>快捷键：Alt+J<br><img src="http://zlv.me/pics/14-multiselection.gif" alt=""></p>
-<h2 id="列编辑">列编辑</h2><p>在vim中叫作块编辑，同样神技！使用方法：按住Alt加鼠标左键拉框即可<br>PS：发现Ubuntu下不可用，代替方法为按Alt+Shift+Insert之后拖框选择。<br>但是经过这么操作之后，神技就大打折扣了。估计是与Ubuntu的快捷键冲突了。<br><img src="http://zlv.me/pics/14-columnselection.gif" alt=""></p>
-<h2 id="Enter和Tab在代码提示时的区别">Enter和Tab在代码提示时的区别</h2><p>看图!<br><img src="http://zlv.me/pics/14-codecompletionentertab.gif" alt=""></p>
-<h2 id="参考链接">参考链接</h2><p><a href="http://zlv.me/posts/2015/07/13/14_android-studio-tips/" target="_blank" rel="external">原文链接</a><br><a href="">Android Studio Tips Of the Day - Roundup #1</a><br><a href="">Android Studio Tips Of the Day - Roundup #2</a><br><a href="">Android Studio Tips Of the Day - Roundup #3</a><br><a href="">Android Studio Tips Of the Day - Roundup #4</a><br><a href="">Android Studio Tips Of the Day - Roundup #5</a><br><a href="">Android Studio Tips Of the Day - Roundup #6</a></p>
+        <h2 id="前言">前言</h2><p>现在移动应用的开发中，需要支付的场景很多，这篇文章主要介绍android上微信支付的相关细节，首先建议有这方面需求的人直接上官网下载demo，查询接口文档，不要首先想着去第三方论坛找demo或者解答，这样会少走很多弯路。本文不再赘述在微信开放平台申请app_id,app_key（默认你已经会了，并且有了）。</p>
+<ul>
+<li><a href="https://open.weixin.qq.com/cgi-bin/index?t=home/index&amp;lang=zh_CN" target="_blank" rel="external">微信开发平台</a></li>
+<li><a href="https://pay.weixin.qq.com/index.php/home/login?return_url=%2Findex.php%2Faccount" target="_blank" rel="external">微信商户平台</a><br>客户端的开发主要用到微信开发平台，参数配置也是在开发平台。登录账号后：管理中心 - - - 创建移动应用 - - - 填写基本信息提交审核（一周左右时间审核通过） - - - 点应用查看 - - -开发信息（修改）。IOS应用添加Bundle ID即可，Android开发添加应用包名和应用签名，这些在官方开发文档里写的非常清楚了，请参考官方文档。需要特别说明的是，签名一定要用你自己应用的正式keystore签名（这样当然有一点比较麻烦就是，你每次开发debug时要用签名导出安装才能正常支付，不能直接在手机上run Application）。签名是32位的MD5码，官网也有提供签名工具(文章结尾有下载地址)。</li>
+</ul>
+<h2 id="支付流程">支付流程</h2><p>下面我就来说一说微信支付开发时需要注意的地方：</p>
+<p><strong> 1 首先来看一下，微信支付的架构和流程图</strong><br><img src="http://img.blog.csdn.net/20150321155907863" alt=""></p>
+<p><img src="https://pay.weixin.qq.com/wiki/doc/api/img/chapter8_3_1.png" alt=""></p>
+<p><strong> 2 再来看一下成功调起微信支付的界面</strong><br><img src="http://img.blog.csdn.net/20150321160654957" alt=""></p>
+<h2 id="配置工程">配置工程</h2><p><strong> 1 wxapi.WXPayEntryActivity</strong></p>
+<p>这里必须要有wxapi这个包名，同时必须有WXPayEntryActivity这个类名，否则无法调起微信支付，（开发文档和官方的demo都有提到这点，但是描述没有很详细，容易被坑）。WXPayEntryActivity是请求支付的回调类，再次要特别说明的是，wxapi的包名，WXPayEntryActivity的类名都是固定的，不要自己更改，否则回调失败，尤其需要注意的是wxapi要放到你的应用包路径的第一层目录下，比如你的包路径是com.xx.xxx(这个包路径以你的AndroidManifest中的为准。)，那么wxapi就一定要是com.xx.xxx.wxapi。要是你自己建了一个com.xx.xxx.pay.wxapi的路径，回调也是有问题的。<br><img src="http://img.blog.csdn.net/20150321162930990" alt=""></p>
+<p><strong> 2 支付成功通知</strong></p>
+<p>在WXPayEntryActivity的OnResp中处理，不能以微信返回的通知界面为准（我遇到的情况，网络不稳定的时候，微信返回界面提示支付失败，但是收到微信通知其实已经支付成功了），必须要去自己的服务器查询支付状态，这里微信建议用轮循机制去查询。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onResp</span><span class="params">(BaseResp resp)</span> </span>&#123;</span><br><span class="line">    Log.d(TAG, <span class="string">"onPayFinish, errCode = "</span> + resp.errCode);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (resp.getType() == ConstantsAPI.COMMAND_PAY_BY_WX) &#123;</span><br><span class="line">        AlertDialog.Builder builder = <span class="keyword">new</span> AlertDialog.Builder(<span class="keyword">this</span>);</span><br><span class="line">        builder.setTitle(R.string.app_tip);</span><br><span class="line">        builder.setMessage(getString(R.string.pay_result_callback_msg, resp.errStr +<span class="string">";code="</span> + String.valueOf(resp.errCode)));</span><br><span class="line">        builder.show();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>上面是官方的代码，建议你修改成如下的样式。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onResp</span><span class="params">(BaseResp resp)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (resp.getType() == ConstantsAPI.COMMAND_PAY_BY_WX) &#123;</span><br><span class="line"><span class="comment">//          AlertDialog.Builder builder = new AlertDialog.Builder(this);</span></span><br><span class="line"><span class="comment">//          builder.setTitle(R.string.wxpay_tip);</span></span><br><span class="line"><span class="comment">//          builder.setMessage(getString(R.string.pay_result_callback_msg, resp.errStr +";code=" + String.valueOf(resp.errCode)));</span></span><br><span class="line"><span class="comment">//          builder.show();</span></span><br><span class="line">            <span class="keyword">switch</span> (resp.errCode) &#123;</span><br><span class="line">                <span class="keyword">case</span> BaseResp.ErrCode.ERR_OK: <span class="comment">//成功</span></span><br><span class="line">                    T.showShort(<span class="keyword">this</span>, R.string.wxpay_result_success);</span><br><span class="line">                    IntentUtil.gotoActivityToTop(WXPayEntryActivity.<span class="keyword">this</span>, Mine_gentuan_order_ok.class);</span><br><span class="line">                    <span class="keyword">this</span>.finish();</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> BaseResp.ErrCode.ERR_USER_CANCEL: <span class="comment">//用户取消</span></span><br><span class="line">                    T.showShort(<span class="keyword">this</span>, R.string.wxpay_result_cancel);</span><br><span class="line">                    <span class="keyword">this</span>.finish();</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> BaseResp.ErrCode.ERR_COMM:     <span class="comment">//错误</span></span><br><span class="line">                    T.showShort(<span class="keyword">this</span>, R.string.wxpay_result_error);</span><br><span class="line">                    <span class="keyword">this</span>.finish();</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<p>说明：T是我自己写的一个Toast工具类。回调后返回errCode值的说明：</p>
+<ul>
+<li>0   成功  展示成功页面</li>
+<li>-1  错误  可能的原因：签名错误、未注册APPID、项目设置APPID不正确、注册的APPID与设置的不匹配、其他异常等。</li>
+<li>-2  用户取消    无需处理。发生场景：用户不支付了，点击取消，返回APP。</li>
+</ul>
+<p><strong> 3 生成prepay_id,在服务器完成，由服务器去跟微信服务器交互，客户端不需要参与。</strong></p>
+<p>这和支付宝支付的主要区别之一，支付宝支付需要客户端拼接订单信息，然后调起支付接口。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line">   * 获取预支付订单号:</span><br><span class="line">   * prepay_id（服务器完成）！！！</span><br><span class="line">   * 注意：如果服务端开发文档跟客户端demo里的参数不一样，以demo里的参数为准，</span><br><span class="line">   * 否则服务器传过来的参数无法调起微信支付！！！</span><br><span class="line">   * */</span></span><br><span class="line">   <span class="function"><span class="keyword">private</span> String <span class="title">genProductArgs</span><span class="params">()</span> </span>&#123;</span><br><span class="line">       StringBuffer xml = <span class="keyword">new</span> StringBuffer();</span><br><span class="line"></span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">           String  nonceStr = genNonceStr();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">           xml.append(<span class="string">"&lt;/xml&gt;"</span>);</span><br><span class="line">          List&lt;NameValuePair&gt; packageParams = <span class="keyword">new</span> LinkedList&lt;NameValuePair&gt;();</span><br><span class="line">           packageParams.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"appid"</span>, Constants.APP_ID));</span><br><span class="line">           packageParams.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"body"</span>, <span class="string">"APP pay test"</span>));</span><br><span class="line">           <span class="comment">/**这里用的是mach_id,跟sign签名时参数名不同，一定要注意*/</span></span><br><span class="line">           packageParams.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"mch_id"</span>, Constants.MCH_ID));</span><br><span class="line">           packageParams.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"nonce_str"</span>, nonceStr));</span><br><span class="line">           packageParams.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"notify_url"</span>, <span class="string">"http://121.40.35.3/test"</span>));</span><br><span class="line">           packageParams.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"out_trade_no"</span>,genOutTradNo()));</span><br><span class="line">           packageParams.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"spbill_create_ip"</span>,<span class="string">"127.0.0.1"</span>));</span><br><span class="line">           packageParams.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"total_fee"</span>, <span class="string">"1"</span>));</span><br><span class="line">           packageParams.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"trade_type"</span>, <span class="string">"APP"</span>));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">           String sign = genPackageSign(packageParams);</span><br><span class="line">           packageParams.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"sign"</span>, sign));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">          String xmlstring =toXml(packageParams);</span><br><span class="line"></span><br><span class="line">           <span class="keyword">return</span> xmlstring;</span><br><span class="line"></span><br><span class="line">       &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">           Log.e(TAG, <span class="string">"genProductArgs fail, ex = "</span> + e.getMessage());</span><br><span class="line">           <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<p><strong> 4 获取二次签名sign</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">genPayReq</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        req.appId = Constants.APP_ID;</span><br><span class="line">        req.partnerId = Constants.MCH_ID;</span><br><span class="line">        req.prepayId = resultunifiedorder.get(<span class="string">"prepay_id"</span>);</span><br><span class="line"><span class="comment">//      req.packageValue = "prepay_id="+resultunifiedorder.get("prepay_id");</span></span><br><span class="line">        req.packageValue = <span class="string">"Sign=WXPay"</span>;</span><br><span class="line">        req.nonceStr = genNonceStr();</span><br><span class="line">        req.timeStamp = String.valueOf(genTimeStamp());</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        List&lt;NameValuePair&gt; signParams = <span class="keyword">new</span> LinkedList&lt;NameValuePair&gt;();</span><br><span class="line">        signParams.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"appid"</span>, req.appId));</span><br><span class="line">        signParams.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"noncestr"</span>, req.nonceStr));</span><br><span class="line">        <span class="comment">/**</span><br><span class="line">         * 这里的package参数值必须是Sign=WXPay,否则IOS端调不起微信支付，</span><br><span class="line">         * (参数值是"prepay_id="+resultunifiedorder.get("prepay_id")的时候Android可以，IOS不可以)</span><br><span class="line">         */</span></span><br><span class="line">        signParams.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"package"</span>, req.packageValue));</span><br><span class="line">        <span class="comment">/**注意二次签名这里不再是mch_id,变成了prepayid;*/</span></span><br><span class="line">        signParams.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"partnerid"</span>, req.partnerId));</span><br><span class="line">        signParams.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"prepayid"</span>, req.prepayId));</span><br><span class="line">        signParams.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"timestamp"</span>, req.timeStamp));</span><br><span class="line"></span><br><span class="line">        req.sign = genAppSign(signParams);</span><br><span class="line"></span><br><span class="line">        sb.append(<span class="string">"sign\n"</span>+req.sign+<span class="string">"\n\n"</span>);</span><br><span class="line"></span><br><span class="line">        show.setText(sb.toString());</span><br><span class="line"></span><br><span class="line">        Log.e(<span class="string">"orion"</span>, signParams.toString());</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong> 5 起调微信支付</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">sendPayReq</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    msgApi.registerApp(Constants.APP_ID);</span><br><span class="line">    msgApi.sendReq(req);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong> 6 配置Manifest.xml，权限什么的按照文档的配置就行了</strong><br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">           <span class="attribute">android:name</span>=<span class="value">".PayActivity"</span></span><br><span class="line">           <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">           <span class="attribute">android:exported</span>=<span class="value">"true"</span></span><br><span class="line">           <span class="attribute">android:launchMode</span>=<span class="value">"singleTop"</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.action.MAIN"</span> /&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="title">category</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.category.LAUNCHER"</span> /&gt;</span></span><br><span class="line">           <span class="tag">&lt;/<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">           <span class="comment">&lt;!--这个intent-filter不要忘了--&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.action.VIEW"</span>/&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="title">category</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.category.DEFAULT"</span>/&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="title">data</span> <span class="attribute">android:scheme</span>=<span class="value">"wxd930ea5d5a258f4f"</span>/&gt;</span></span><br><span class="line">           <span class="tag">&lt;/<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>5，支付通知接口和退款接口按照开发文档即可，这里不再赘述。</p>
+<h3 id="参考文档">参考文档</h3><ul>
+<li><a href="https://pay.weixin.qq.com/wiki/doc/api/app.php?chapter=8_3" target="_blank" rel="external">官网微信支付业务流程</a></li>
+<li><a href="https://pay.weixin.qq.com/wiki/doc/api/app.php?chapter=8_5" target="_blank" rel="external">官网APP端开发步骤</a></li>
+<li><a href="https://open.weixin.qq.com/zh_CN/htmledition/res/dev/download/sdk/Gen_Signature_Android.apk" target="_blank" rel="external">应用签名工具</a></li>
+<li><a href="http://blog.csdn.net/baidu_17508977/article/details/44517283" target="_blank" rel="external">微信支付（不得不吐槽腾讯这个坑货）</a></li>
+<li><a href="http://download.csdn.net/detail/baidu_17508977/8997405" target="_blank" rel="external">DEMO下载地址</a></li>
+</ul>
 
       
     </div>
@@ -293,7 +261,7 @@
       
       
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Coding/">Coding</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android-studio/">android_studio</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shortkey/">shortkey</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WXPay/">WXPay</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/">coding</a></li></ul>
 	</div>
 
       
@@ -319,7 +287,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
     </nav>
   
 </div>
@@ -327,7 +295,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2015 salangheee
+    		&copy; 2016 salangheee
     	</div>
       	<div class="footer-right">
       		<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>

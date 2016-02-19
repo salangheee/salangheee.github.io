@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: Coding | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/tags/Coding/index.html">
+<meta property="og:url" content="http://yoursite.com/page/4/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -192,56 +192,136 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-coding_android_as_shortkey" class="article article-type-post" itemscope itemprop="blogPost">
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/11/06/coding_android_as_shortkey/" class="archive-article-date">
-  	<time datetime="2015-11-06T01:57:29.000Z" itemprop="datePublished">Nov 6</time>
+    <div class="article-meta">
+      <a href="/2015/11/06/coding_android_as_shortkey/" class="article-date">
+  	<time datetime="2015-11-06T01:57:29.000Z" itemprop="datePublished">2015-11-06</time>
 </a>
-        </div>
-    	 
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/11/06/coding_android_as_shortkey/">倍数提高工作效率的Android Studio奇技</a>
+      <a class="article-title" href="/2015/11/06/coding_android_as_shortkey/">倍数提高工作效率的Android Studio奇技</a>
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这是从Philippe Breault的系列文章《Android Studio Tips Of the Day》中提取出来的自认为精华的部分。<br>这些技巧在实际应用中能够非常大的提高工作效率。 </p>
+<h2 id="关于快捷键">关于快捷键</h2><p><strong> The File Structure Popup</strong> </p>
+<blockquote>
+<p>ctrl+f12 </p>
+</blockquote>
+<p>此快捷键可以调出当前文件的大纲，并通过模糊匹配快速跳转至指定的方法。<br>勾选上“show anonymous classes”后其功能相当于Eclipse中的ctrl+o<br><img src="http://zlv.me/pics/14-ctrl+f12.gif" alt=""></p>
+<p><strong> The Call Hierarchy Popup</strong> </p>
+<blockquote>
+<p>ctrl+alt+h </p>
+</blockquote>
+<p>查看某个方法的调用路径。<br><img src="http://zlv.me/pics/14-ctrl+alt+h.gif" alt=""></p>
+<p><strong> Quick Definition Lookup</strong> </p>
+<blockquote>
+<p>ctrl+shift+i </p>
+</blockquote>
+<p>不离开当前文件当前类的情况下快速查看某个方法或者类的实现。通过大概预览下调用的方法，可以避免许多未知的坑。<br><img src="http://zlv.me/pics/14-ctrl+shift+i.gif" alt=""></p>
+<p><strong> Bookmarks!</strong><br>如其名，书签。帮助快速回到指定的位置，实际使用中简直爽得不行。</p>
+<blockquote>
+<p>f11 </p>
+</blockquote>
+<p>将当前位置添加到书签中或者从书签中移除。 </p>
+<blockquote>
+<p>shift+f11 </p>
+</blockquote>
+<p>显示有哪些书签。<br><img src="http://zlv.me/pics/14-Bookmarks.gif" alt=""></p>
+<p><strong> Find Actions</strong> </p>
+<blockquote>
+<p>ctrl+shift+a </p>
+</blockquote>
+<p>对于没有设置快捷键或者忘记快捷键的菜单或者动作（Action），可能通过输入其名字快速调用。神技！！！<br>例如想要编译，只需要输入”release”，则列表框中就会出现”assembleRelease”选项，选择就可以进行编译。<br><img src="http://zlv.me/pics/14-FindActions.gif" alt=""></p>
+<p><strong> Move Lines Up/Down</strong> </p>
+<blockquote>
+<p>alt+shift+up/down </p>
+</blockquote>
+<p>上下移动行，这个没什么好说的，肯定会用到。<br><img src="http://zlv.me/pics/14-MoveLinesUpDown.gif" alt=""></p>
+<p><strong> Lines Edit</strong></p>
+<blockquote>
+<p>ctrl+y，ctrl+x, ctrl+d </p>
+</blockquote>
+<p>删除行，删除并复制行，复制行并粘贴，必备。<br><strong> VCS Operations Popup</strong> </p>
+<blockquote>
+<p>Alt+`(是1左边的那个键) </p>
+</blockquote>
+<p>此快捷键会显示一个版本管理常用的一个命令，可以通过命令前面的数字或者模糊匹配来快速选择命令。<br>极大的提高了工作效率，快速提交代码、暂存代码、切分支等操作操作如鱼得水。<br><img src="http://zlv.me/pics/14-vcspopup.gif" alt=""></p>
+<p><strong> Hide All Panels</strong> </p>
+<blockquote>
+<p>ctrl+shift+f12 </p>
+</blockquote>
+<p>关闭或者恢复其他窗口。在编写代码的时候非常方便的全屏编辑框，可以更加专心的coding…<br><img src="http://zlv.me/pics/14-hideallwindows.gif" alt=""></p>
+<p><strong> Parameter Info</strong> </p>
+<blockquote>
+<p>ctrl+p </p>
+</blockquote>
+<p>在调用一些方法的时候免不了会忘记或者不知道此方法需要哪些参数。ctrl+p可以显示出此方法需要的参数。必备技能之一。<br><strong> Rename</strong> </p>
+<blockquote>
+<p>shift+f6 </p>
+</blockquote>
+<p>重命名变量或者方法名。重构神技。<br><img src="http://zlv.me/pics/14-rename.gif" alt=""></p>
+<h2 id="条件断点">条件断点</h2><p>通过右键断点，可以对一个断点加入条件。只有当满足条件时，才会进入到断点中。调试神技，只对自己关心的情况进行调试，不浪费时间。<br><img src="http://zlv.me/pics/14-conditionalbreakpoint.gif" alt=""></p>
+<h2 id="进入调试模式">进入调试模式</h2><p>点击Attach Debugger(即绿色小虫旁边那个)可以快速进入调试而不需要重新部署和启动app。<br>可以选择为此功能设置一个快捷键或者通过前面提到的Find Actions(ctrl+shift+a)输入”attach”进行调用。<br><img src="http://zlv.me/pics/14-attachdebugger.gif" alt=""></p>
+<h2 id="快速查看变量的值">快速查看变量的值</h2><p>按住Alt点击想要查看的变量或者语句。如果想查看更多，则可以按Alt+f8调出Evaluate Expression窗口来自行输入自定义的语句。<br><img src="http://zlv.me/pics/14-mouse_evaluate_expression.gif" alt=""></p>
+<h2 id="分析堆栈信息">分析堆栈信息</h2><p>Find Actions(ctrl+shift+a)输入”analyze stacktrace”即可查看堆栈信息。<br><img src="http://zlv.me/pics/14-analyzestacktrace.gif" alt=""></p>
+<h2 id="分析某个值的来源">分析某个值的来源</h2><p>Find Actions(ctrl+shift+a)输入”Analyze Data Flow to Here”，可以查看某个变量某个参数其值是如何一路赋值过来的。<br>对于分析代码非常有用。<br><img src="http://zlv.me/pics/14-analyzedataflow.gif" alt=""></p>
+<h2 id="多行编辑">多行编辑</h2><p>强大的神技之一，用过vim的vim-multiple-cursors或者Sublime Text的多行编辑都不会忘记那种快感！ 也许不是平时用得最多的技能，但是却是关键时刻提高效率的工具。<br>快捷键：Alt+J<br><img src="http://zlv.me/pics/14-multiselection.gif" alt=""></p>
+<h2 id="列编辑">列编辑</h2><p>在vim中叫作块编辑，同样神技！使用方法：按住Alt加鼠标左键拉框即可<br>PS：发现Ubuntu下不可用，代替方法为按Alt+Shift+Insert之后拖框选择。<br>但是经过这么操作之后，神技就大打折扣了。估计是与Ubuntu的快捷键冲突了。<br><img src="http://zlv.me/pics/14-columnselection.gif" alt=""></p>
+<h2 id="Enter和Tab在代码提示时的区别">Enter和Tab在代码提示时的区别</h2><p>看图!<br><img src="http://zlv.me/pics/14-codecompletionentertab.gif" alt=""></p>
+<h2 id="参考链接">参考链接</h2><p><a href="http://zlv.me/posts/2015/07/13/14_android-studio-tips/" target="_blank" rel="external">原文链接</a><br><a href="">Android Studio Tips Of the Day - Roundup #1</a><br><a href="">Android Studio Tips Of the Day - Roundup #2</a><br><a href="">Android Studio Tips Of the Day - Roundup #3</a><br><a href="">Android Studio Tips Of the Day - Roundup #4</a><br><a href="">Android Studio Tips Of the Day - Roundup #5</a><br><a href="">Android Studio Tips Of the Day - Roundup #6</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Coding/">Coding</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android-studio/">android_studio</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shortkey/">shortkey</a></li></ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/coding/">coding</a>
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      
+      <div class="clearfix"></div>
+    </div>
     
+  </div>
+  
+</article>
 
+
+
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/3/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
+    </nav>
+  
 </div>
       <footer id="footer">
   <div class="outer">
@@ -270,10 +350,10 @@
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: false,
+		isHome: true,
 		isPost: false,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false
 	}
